@@ -14,7 +14,7 @@ int main()
     long long int gamma = 0;              // Выходная последовательность бит
     char Name[16] = {};
     char name[16] = {};
-    cout << "Введите имя файла шифртекста ";
+    cout << "Enter the ciphertext file name ";
     cin >> name;
     cout << "Введите имя файла c открытым текстом ";
     cin >> Name;
