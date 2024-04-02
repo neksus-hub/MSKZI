@@ -16,11 +16,11 @@ int main()
     char name[16] = {};
     cout << "Enter the ciphertext file name ";
     cin >> name;
-    cout << "Введите имя файла c открытым текстом ";
+    cout << "Введите имя файла c открытым текстом";
     cin >> Name;
     ofstream out(name, ios::binary);
     ifstream in(Name, ios::binary);
-    while (in.read((char*)&data, sizeof(long long int))) {
+    while (in.read((char*)&data, 8))  {
                 for (int i = 0; i < 64; i++) {
                     gamma = gamma << 1;
                     bit_gamma = ((((rlz1 >> 22) ^ (rlz1 >> 17)) & 0x1) ^ (((rlz2[0] >> 59) ^ (rlz2[0] >> 22)) & 0x1));
@@ -34,7 +34,7 @@ int main()
                     rlz2[1] = rlz2[1] + (((rlz2[0] >> 59) ^ (rlz2[0] >> 22)) & 0x1);   // Запись бита обратной связи
                 }
                 mask = data ^ gamma;
-                out.write((char*)&mask, sizeof(long long int));
+                out.write((char*)&mask, 8);
     }
     in.close();
     out.close();
