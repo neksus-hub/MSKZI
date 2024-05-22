@@ -5,7 +5,7 @@
 using namespace std;
 
 // Функция для вывода 8-битного числа в двоичном формате
-void print_bits(uint8_t bits) 
+void print_bits(uint8_t bits)
 {
     int N(8);
     for (int i = N - 1; i >= 0; i--) {
@@ -27,7 +27,7 @@ void print_vector(const vector<uint8_t>& vect)
 }
 
 // Функция для вывода двумерного вектора
-void print_vector(const vector<vector<uint8_t>>& vect)
+void print_vector(const vector < vector < uint8_t >> & vect)
 {
     for (long unsigned int i = 0; i < vect.size(); i++) {
         for (long unsigned int j = 0; j < vect[i].size(); j++)
@@ -45,7 +45,7 @@ uint8_t circle_step(uint8_t byte, int p)
 // Функция для создания таблицы подстановки S2 из таблицы S
 vector<vector<uint8_t>> create_S2(const vector<uint8_t>& S)
 {
-    vector<vector<uint8_t>> S2;
+    vector<vector<uint8_t >> S2;
     for (long unsigned int i = 0; i < S.size(); i++) {
         vector<uint8_t> help_vector;
         for (long unsigned int j = 0; j < S.size(); j++) {
