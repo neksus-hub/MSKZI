@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
 // Функция для вывода 8-битного числа в двоичном формате
