@@ -1,0 +1,7 @@
+﻿  Generators.cpp
+D:\учеба\Универ\МиСКЗИ\Лабораторная работа №3\lab2\Generators.cpp(2,38): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\учеба\Универ\МиСКЗИ\Лабораторная работа №3\lab2\Generators.cpp(73,12): warning C4244: return: преобразование "uint64_t" в "uint8_t", возможна потеря данных
+  main.cpp
+  Statistic.cpp
+  Создание кода...
+  lab2.vcxproj -> D:\учеба\Универ\МиСКЗИ\Лабораторная работа №3\lab2\x64\Debug\lab2.exe
