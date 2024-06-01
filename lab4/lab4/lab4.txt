@@ -1,0 +1,1 @@
+Debug/main.cpp.o Debug/gost_magma.cpp.o
